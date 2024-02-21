@@ -6,6 +6,7 @@
 .pnp.js
 .env
 firebase.json
+.firebaserc
 
 # testing
 /coverage
