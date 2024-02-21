@@ -1,0 +1,55 @@
+@import url('./App.css');
+
+
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+   
+  }
+  
+  .section {
+    margin: 20px 0;
+    padding: 20px;
+    /* border: 1px solid var(--second-light);  */
+    border-radius: 5px;
+  background-color: var(--prime-light);
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--second-light);
+  }
+  
+  .section  p {
+    /* font-size: 18px; */
+    margin-bottom: 20px;
+    color:var(--second-light);
+  }
+  
+  .section ul {
+    margin-left: 20px;
+    list-style: disc;
+    color: var(--second-light); 
+  }
+  
+  
+  
+  .section a {
+    color: var(--second-light);
+    text-decoration: none;
+  }
+  .section .btn{
+    color: var(--prime-light);
+    display: block;
+    font-size: small;
+    text-align: center;
+    width: 200px;
+  }
+  
+  
+
+
+  

@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "development": "ecommercewebsitedemo",
+    "default": "ecommercewebsitedemo",
+    "staging": "ecommercewebsitedemo"
+  },
+  "targets": {}
+}

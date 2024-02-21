@@ -1,0 +1,88 @@
+[
+  [
+    ["CLA", "BEEE", "PSPC", "EGCD", "ELCS", "BEEEL", "PSPCL", "IC"],
+    ["DEMC", "EP", "EPL", "SS", "ET", "ETL", "ILTA", "PDS", "PDSL"],
+    ["EM-1", "EP", "EPL", "FEE", "FEEL", "PDS", "PDSL", "HV"],
+    ["EC", "DEMC", "PDS", "EGCD", "ECL", "ELCSL-1", "PDSL", "AP"],
+    ["DEMC", "ELCSL", "EP", "BEEE", "EC", "WP", "BEEEL", "EPCL"]
+  ],
+  [
+    ["DM", "EP", "MEFA", "OOPJ", "DS", "EPL", "OOPJL", "DSL", "ES"],
+    ["MATH", "OOP", "OOPL", "CL", "ELCSL", "EDC", "EDCL", "NT", "EGD"],
+    ["EF", "EM-2", "BE", "BEL", "EM-1", "EM-1 L", "ELL", "EG", "CI"],
+    ["EP", "MM", "BEEE", "EM", "EG", "EPL", "W", "ES"],
+    ["MM", "EM", "MSM", "PDS", "EGCD", "PDSL", "MSML", "ES"]
+  ],
+  [
+    ["PS", "DLD", "DAA", "DBMS", "FLAT", "DAAL", "DLDL", "DBMSL"],
+    ["PRV", "IoT", "AEC", "AECL", "DLD", "DLDL", "DSP", "DSPL", "CS"],
+
+    ["NA", "NAL", "AEC", "AECL", "M-3", "PS-1", "OOP", "PE"],
+    ["MEFA", "BMC", "CT", "MOF", "MOM-1", "S-1", "MOML", "SL", "IC"],
+
+    ["TC", "KOM", "TD", "MOS", "MP", "MOSL", "CAD"]
+  ],
+  [
+    ["IOR", "COA", "DSP", "WT", "CD", "COAL", "DSPL", "WTL"],
+    ["RL", "CS1", "CS1L", "DSD", "DSDL", "LIC", "LICL", "EWGM"],
+
+    ["EM-2", "EM-2 L", "PS-2", "SS", "DLD", "DLDL", "ES"],
+    ["HE", "MOM-2", "SM", "SA", "S-2", "WRE", "CTL", "HEL"],
+
+    ["DME", "DOM", "FMHM", "MCMT", "PS", "MCMTL", "FMHML", "IC"]
+  ],
+  [
+    ["OS", "CN", "SE", "MFDS", "E-1", "OSL", "CNL", "SEL", "ELCSL-2"],
+    [
+      "CN",
+      "COA",
+      "ELCSL-2",
+      "CS2",
+      "CS2L",
+      "MMCNL",
+      "RFMEL",
+      "Mini Project-1",
+      "IC"
+    ],
+    [
+      "DSP",
+      "LIC",
+      "LICL",
+      "IOTL",
+      "PE",
+      "PEL",
+      "CS",
+      "CSL",
+      "MP-1",
+      "AR",
+      "PS"
+    ],
+    ["ASA", "DRCS", "EE-1", "EC", "TE-1", "ELCSL-2", "SML", "TEL"],
+
+    ["HT", "DTE", "ATD", "MMM", "HTL", "ATDL", "ELCSL-2"]
+  ],
+  [
+    ["CNS", "AI", "E-2", "E-3", "OE-1", "ELCSL-3", "MP", "CDC", "SI"],
+    ["ELCSL3", "PD&I", "E1", "E2", "OE1", "OE2", "MP2", "CDC"],
+
+    ["PSOC", "PDI", "E-1", "E-2", "OE-1", "OE-2", "MP-2", "SI", "CDC"],
+    ["BPCADL", "DSS", "EE-2", "FE", "TE-2", "PEC-1/MOOC-1", "ELCSL-1", "EEL"],
+
+    ["OR", "FEM", "MEFA", "PEC-1", "PEC-2", "CAMSL", "ELCSL-3"]
+  ],
+  [
+    ["ML", "E-4", "OE-2", "PROJECT-1"],
+    ["E3", "E4", "OE3", "SIP", "PI", "ES"],
+
+    ["E-3", "E-4", "OE-3", "SIP", "P-1"],
+    ["PEC-2/MOOC-2", "PEC-3", "PEC-4", "OEC-1", "P-1", "SEMINAR"],
+    ["PEC-3", "OEC-1", "OEC-2", "PROJECT"]
+  ],
+  [
+    ["E-5", "OE-3", "OE-4", "PROJECT-2", "CS"],
+    ["CS", "E5", "OE4", "PD&D"],
+    ["CS", "E-5", "OE-4", "P-2&D"],
+    ["PEC-5", "OEC-2/MOOC-3", "OEC-3", "P-2", "ICS"],
+    ["PEC-4", "OEC-3", "OEC-4", "CS", "PROJECT"]
+  ]
+]

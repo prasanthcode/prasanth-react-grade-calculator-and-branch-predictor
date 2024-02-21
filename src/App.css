@@ -1,38 +1,555 @@
-.App {
+:root {
+  --prime-light: #ecf0f1; /* Light gray-blue for the main background */
+  --prime-dark: #dfe6e9; /* Slightly darker shade for the main background */
+  --second-light: #1F1F1F; /* Dark blue-gray for secondary elements */
+  --second-dark: #fc8f00; /* A vibrant orange for accents */
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.dark-theme {
+  --prime-light: #283e58;
+  --prime-dark: #1a2d44;
+  --second-light: #d8d8d8;
+  --second-dark: #e76e1d;
+}
+/* Header container */
+.header {
+  background-color: var(--prime-dark);
+  /*; Dark background */
+
+  /* right: 0; */
+  /* width: max-content; */
+  color: var(--second-light); /* Light text */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* margin-top: 0; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.header-right {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  color: var(--second-light);
+  text-decoration: none;
+}
+
+.fa-youtube {
+  font-size: 30px;
+  color: var(--second-light);
+}
+
+body {
+  transition: 0.5s ease-in-out;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-color: var(--prime-light);
+  color: var(--second-light); /* Light text */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#grades_wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#grades_tab {
+  border-collapse: collapse;
+
+  text-align: center;
+  width: 100%;
+  /* box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2); Subtle shadow */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: var(--prime-dark); /* Dark table background */
+  color: var(--second-light); /* Light text */
+}
+
+th {
+  padding: 5px;
+  background-color: var(--prime-dark); /* Dark header background */
+  color: var(--second-light); /* Light text */
+}
+
+td {
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--prime-light); /* Darker background for even rows */
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+td > select {
+  border: none;
+  outline: none;
+  width: 60%;
+  padding: 5px;
+  background: none;
+  color: var(--second-light); /* Light text */
+}
+
+.optandbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 300px;
+}
+.calculate {
+  /* align-items: right; */
+  justify-content: right;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 10px 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  border: none;
+  text-decoration: none;
+  background-color: var(--second-dark); /* Lighter button background */
+  color: var(--second-light);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.branchoption {
+  /* margin: 10px; */
+  height: 32px;
+  width: 65px;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--prime-dark); /* Darker background for branch option */
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--second-light); /* Light text */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.branchoption:hover {
+  background-color: var(--prime-dark); /* Hover background color */
+  color: var(--second-light); /* Light text */
+}
+
+#gradecontainer {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grades {
+  margin: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.probability {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+.probability i {
+  margin-left: 5px;
+}
+.prediction-info {
+  /* background-color: var(--prime-dark); */
+  padding: 15px;
+  margin: 10px;
+  /* border-radius: 8px; */
+
+  /* box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  /* border: 2px solid white; */
+}
+.prediction-info p {
+  color: var(--second-light);
+  margin: 10px;
+}
+.testing-label {
+  /* font-size: 14px; */
+  margin-right: 8px;
+  color: var(--second-dark);
+}
+.download-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--second-light); /* Light text */
+  background-color: var(--prime-dark); /* Dark button background */
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#totalgrade {
+  font-size: 100px;
+  color: var(--second-light); /* Light text */
+  transition: 0.5s ease-in-out;
+}
+#addsem,
+#rank,
+#total_cgpa,
+#math_cgpa,
+#phy_cgpa,
+#chem_cgpa {
+  width: 30%;
+  height: 20px;
+  background-color: var(--prime-light);
+
+  /* margin-right: 10px; */
+  font-weight: 700;
+  outline: none;
+  /* border:none; */
+  border: 1px solid var(--second-light);
+  color: var(--second-light);
+  border-radius: 5px;
+  text-align: right;
+  font-size: 15px;
+  padding: 5px;
+  /* box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1) inset; */
+}
+.predict-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.branch-wrapper {
+  /* box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px; */
+  background-color: var(--prime-dark);
+  border-radius: 8px;
+  padding: 8px;
+}
+.branch_predict {
+  margin: 0 auto;
+}
+.branch {
+  text-align: center;
+}
+.addsem-container button {
+  color: var(--second-light);
+  background-color: var(--prime-dark);
+}
+#examcell {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--second-light);
+  background-color: var(--prime-dark);
+  padding: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.checkbox {
+  display: inline-block;
+}
+
+#toggle-btn {
+  display: none;
+}
+
+.theme label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 40px; /* Reduce the width by 20% */
+  height: 24px; /* Reduce the height by 20% */
+  background: var(--second-light);
+  border-radius: 50px;
+  transition: 300ms linear;
+}
+
+.theme label:before {
+  position: absolute;
+  top: 50%;
+  left: 2px; /* Reduce the left position by 20% */
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 20px; /* Reduce the width by 20% */
+  height: 20px; /* Reduce the height by 20% */
+  background: var(--second-dark);
+  border-radius: 50%;
+  transition: left 300ms linear;
+}
+
+.theme input:checked + label {
+  background: var(--second-light);
+}
+
+.theme input:checked + label:before {
+  left: 18px; /* Reduce the left position by 20% */
+}
+/* Footer styles */
+footer {
+  background-color: var(--prime-dark);
+  color: var(--second-light);
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: var(--second-light);
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.copyright,
+.designed-by {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+
+.semester-container {
+  width: 200px; /* Adjust the container width as needed */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.semester-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--second-light); /* Add a border between rows */
+}
+
+.semester {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--second-light); /* Text color for semester */
+}
+
+.cgpa {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--second-light); /* Color for CGPA */
+}
+.sem-wrapper {
+  max-height: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.show-wrap {
+  max-height: 1000px;
+}
+#grades_tab {
+  height: fit-content;
+}
+.syllabus-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  padding: 20px;
+  /* background-color: #f0f0f0; */
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for each year's syllabus */
+.syllabus-year {
+  /* background-color: #47596b; */
+  /* border: 1px solid var(--second-light); */
+  border-radius: 5px;
+  padding: 15px 8px;
+  text-align: center;
+  /* box-shadow: 0 2px 5px rgba(126, 126, 126, 0.1); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.syllabus-year h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Styles for download links */
+.syllabus-year a {
+  display: block;
+  background-color: var(--second-light);
+  color: var(--prime-dark);
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+  transition: background-color 0.3s ease;
+}
+
+.faq-item table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.faq-item th,
+.faq-item td {
+  border: 1px solid var(--prime-light);
+  padding: 8px;
+  text-align: left;
+}
+
+.faq-item th {
+  background-color: var(--prime-light);
+}
+.faq-container {
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: var(--second-light); */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.faq-item {
+  padding: 20px;
+  border-bottom: 1px solid var(--prime-light);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.faq-answer.active {
+  /* background-color: var(--prime-dark); */
+  border-bottom: 1px solid var(--prime-light);
+}
+
+.icon-container i {
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--prime-light);
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i.active {
+  transform: rotate(90deg);
+}
+a {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: var(--second-dark);
+}
+@media screen and (max-width: 768px) {
+  .addsem-container {
+    margin-top: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .header h3 {
+    font-size: 15px;
+  }
+  #container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px auto;
+  }
+  #grades_wrapper {
+    width: 100%;
+  }
+
+  .header-right {
+    width: 45%;
+  }
+  .download-btn {
+    margin: 0 10px 0 10px;
+  }
+  #gradecontainer {
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+  .optandbtn {
+    width: 100%;
+  }
+  /* Header container */
+  .header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it's above other content */
+    background-color: var(--prime-dark); /* Dark background */
+    color: var(--second-light); /* Light text */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  .social-icons {
+    text-align: center;
+  }
+
+  .branch-wrapper .social-icons a {
+    display: inline-block;
+    font-size: medium;
+
+    margin: 0 10px;
+  }
+  .branch-wrapper .social-icons i {
+    font-size: large;
+    margin: 10px;
+  }
+
+  .copyright,
+  .designed-by {
+    margin-top: 20px;
   }
 }
