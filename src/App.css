@@ -9,7 +9,7 @@
   margin: 0;
 }
 .dark-theme {
-  --prime-light: #283e58;
+  --prime-light: #131e2c;
   --prime-dark: #1a2d44;
   --second-light: #d8d8d8;
   --second-dark: #e76e1d;
@@ -41,7 +41,7 @@
 }
 .header a {
   color: var(--second-light);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .fa-youtube {
@@ -119,7 +119,7 @@ td > select {
 .calculate {
   /* align-items: right; */
   justify-content: right;
-  margin-top: 50px;
+  margin-top: 24px;
 }
 
 .btn {
@@ -129,7 +129,7 @@ td > select {
   border: none;
   text-decoration: none;
   background-color: var(--second-dark); /* Lighter button background */
-  color: var(--second-light);
+  color: var(--prime-light);
   border-radius: 10px;
 }
 
@@ -276,7 +276,7 @@ td > select {
   cursor: pointer;
   display: block;
   width: 40px; /* Reduce the width by 20% */
-  height: 24px; /* Reduce the height by 20% */
+  height: 24px;
   background: var(--second-light);
   border-radius: 50px;
   transition: 300ms linear;
@@ -336,7 +336,17 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
+.designed-by{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.designed-by img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 
+}
 /* Responsive styles */
 
 .semester-container {
@@ -382,6 +392,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
   /* background-color: #f0f0f0; */
@@ -488,7 +499,102 @@ a {
   text-decoration: none;
   color: var(--second-dark);
 }
+.include_sgpa{
+  font-weight: 600;
+  background-color:  var(--prime-dark);
+
+  
+}
+ 
+.syllabus-btn-group{
+  /* border: 1px solid  var(--second-dark); */
+  color: var(--second-light);
+  border-left: 1px solid  var(--second-dark);
+  border-top: 1px solid  var(--second-dark);
+  border-bottom: 1px solid  var(--second-dark);
+  border-right: none;
+  
+
+}
+.syllabus-btn-group:first-child{
+  border-left: 1px solid  var(--second-dark);
+  border-top: 1px solid  var(--second-dark);
+  border-bottom: 1px solid  var(--second-dark);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.syllabus-btn-group:last-child{
+  border-right: 1px solid  var(--second-dark);
+  border-bottom: 1px solid  var(--second-dark);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cgp{
+  font-size: 100px;
+  color: var(--second-light); /* Light text */
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  text-align: center;
+  
+}
+.sgpa_table{
+  margin: 20px 0;
+  /* width: 80%; */
+  background-color:  var(--prime-dark);
+  
+  text-align: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-collapse: collapse;
+}
+
+.sgpa_table td{
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+.sgpa_input{
+  width: 100%;
+  height: 20px;
+  background-color: var(--prime-light);
+
+  /* margin-right: 10px; */
+  font-weight: 700;
+  outline: none;
+  /* border:none; */
+  border: 1px solid var(--second-light);
+  color: var(--second-light);
+  border-radius: 5px;
+  text-align: right;
+  font-size: 15px;
+  padding: 5px;
+}
+.cgpa_container{
+  width: 50%;
+  margin: 0 auto;
+}
+.new{
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  left: 40px;
+  border:1px solid var(--second-dark);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
 @media screen and (max-width: 768px) {
+  .cgpa_container{
+  width: 79%;
+  margin: 0 ;
+}
+  .syllabus-container {
+  
+  flex-direction: row;
+  
+}
+
   .addsem-container {
     margin-top: 30px;
   }
@@ -498,14 +604,17 @@ a {
   #container {
     display: flex;
     flex-direction: column-reverse;
-    margin: 50px auto;
+    margin: 0px auto;
+  }
+  #totalgrade{
+    margin-top: 50px;
   }
   #grades_wrapper {
     width: 100%;
   }
 
   .header-right {
-    width: 45%;
+    width: 35%;
   }
   .download-btn {
     margin: 0 10px 0 10px;
@@ -536,7 +645,9 @@ a {
   .social-icons {
     text-align: center;
   }
-
+.branch-wrapper{
+  margin-bottom: 20px;
+}
   .branch-wrapper .social-icons a {
     display: inline-block;
     font-size: medium;

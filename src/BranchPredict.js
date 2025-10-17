@@ -67,49 +67,16 @@ export default function BranchPredict() {
       console.log("Select reservation category");
     }
   };
- 
-  // const speed = 10;
 
-  // const incNbrRec = (i, endNbr, id) => {
-  //   if (i <= endNbr) {
-  //     setPredictData((prevPredictions) => ({
-  //       ...prevPredictions,
-  //       [id]: i,
-  //     }));
-
-  //     setTimeout(() => {
-  //       incNbrRec(i + 1, endNbr, id);
-  //     }, speed);
-  //   }
-  // };
-
-  // const handleButtonClick = async() => {
-  //   await predictSend();
-  //   incEltNbr('cse', 'cse');
-  //   incEltNbr('ece', 'ece');
-  //   incEltNbr('ce', 'ce');
-  //   incEltNbr('mme', 'mmen');
-  //   incEltNbr('chemn', 'chemn');
-  //   incEltNbr('chemr', 'chemr');
-  //   incEltNbr('ee', 'eee');
-  //   incEltNbr('me', 'me');
-  // };
-
-  // const incEltNbr = (i, o) => {
-  //   // incNbrRec(0, predictData[o], i);
-  //   incNbrRec(0, predictData?.[o] || 0, i);
-  //   // incNbrRec(0, endNbr, i);
-  // };
   return (
     <div id="container">
       <div className="branch_predict" id="branch_redict">
-      <div className="prediction-info">
+        <div className="prediction-info">
           <p>
             <strong>Branch Prediction</strong> with insights from the 2019 Batch
             data.
           </p>
-          <span className="testing-label">Testing Phase</span>
-        
+          {/* <span className="testing-label">Testing Phase</span> */}
         </div>
 
         <div className="branch-wrapper" id="branch-wrapper">
@@ -276,14 +243,21 @@ export default function BranchPredict() {
               Reset
             </button>
             <button id="predict" onClick={predictSend} className="btn">
-              {loading} 
-            <i className="fas fa-flask"></i>
+              {loading}
+              <i className="fas fa-flask"></i>
             </button>
           </div>
-        <div className="social-icons"> <a href="https://www.linkedin.com/in/prakash-naidu-talatam-441984261">
-        By Talatam Prakash Naidu<i className="fab fa-linkedin"></i>  </a><br/>  <a href="https://www.linkedin.com/in/prasanth-gavvala-442b4327b">&amp; Prasanth Gavvala
-            <i className="fab fa-linkedin"></i>
-          </a></div>
+          <div className="social-icons">
+            {" "}
+            <a href="https://www.linkedin.com/in/prakash-naidu-talatam-441984261">
+              By Talatam Prakash Naidu<i className="fab fa-linkedin"></i>{" "}
+            </a>
+            <br />{" "}
+            <a href="https://www.linkedin.com/in/prasanth-gavvala-442b4327b">
+              &amp; Prasanth Gavvala
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>

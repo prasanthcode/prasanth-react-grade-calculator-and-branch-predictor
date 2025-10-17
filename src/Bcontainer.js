@@ -34,22 +34,17 @@ export default function GradeContainer(props) {
   );
   useEffect(() => {
     // Check if branch and yearSem are both selected before setting grades
-   
-      setGrades(Array(all_subs[yearSem][branch].length).fill(""));
-    
+
+    setGrades(Array(all_subs[yearSem][branch].length).fill(""));
   }, [branch, yearSem, all_subs]);
 
   const handleYearSem = (e) => {
     setYearSem(e.target.value);
     setGrades(Array(all_subs[e.target.value][branch].length).fill(""));
-
   };
   const handlebranch = (e) => {
     setBranch(e.target.value);
     setGrades(Array(all_subs[yearSem][e.target.value].length).fill(""));
-
-   
-
   };
 
   const [cgpa, setCgpa] = useState("0.0");
@@ -75,7 +70,7 @@ export default function GradeContainer(props) {
       if (window.innerWidth <= 768) {
         // Empty string is present, scroll to the top
         window.scrollTo({
-          top: document.getElementById("totalgrade").offsetTop,
+          top: document.getElementById("totalgrade").offsetTop - 30,
           behavior: "smooth",
         });
       }
@@ -133,10 +128,13 @@ export default function GradeContainer(props) {
           </div>
         </div>
         <div id="gradecontainer">
-          <a href="https://examcell.rguktsklm.ac.in/" target="_blank" aria-label="go to rgukt sklm examcell for results">
-            Go to Examcell
+          <a
+            href="https://examcell.rguktsklm.ac.in/"
+            target="_blank"
+            aria-label="go to rgukt sklm examcell for results"
+          >
+            Go to Examcell <i class="fas fa-arrow-right"></i>
           </a>
-          Know your results Here
           <div className="optandbtn">
             <button id="history" className="btn" onClick={showHistory}>
               History
@@ -156,9 +154,8 @@ export default function GradeContainer(props) {
             />
           </div>
           <History history={history} />
-          <h3 className="gradetitle">GPA</h3>
+          <h3 className="gradetitle">SGPA Calculator</h3>
           <h1 id="totalgrade">{cgpa}</h1>
-          <PredictInfo />
         </div>
       </div>
     </>

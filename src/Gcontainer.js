@@ -61,7 +61,7 @@ export default function Gcontainer(props) {
       if (window.innerWidth <= 768) {
         // Empty string is present, scroll to the top
         window.scrollTo({
-          top: document.getElementById("totalgrade").offsetTop,
+          top: document.getElementById("totalgrade").offsetTop - 30,
           behavior: "smooth",
         });
       }
@@ -118,7 +118,11 @@ export default function Gcontainer(props) {
           </div>
         </div>
         <div id="gradecontainer">
-          <a href="https://examcell.rguktsklm.ac.in/" target="_blank" aria-label="go to rgukt sklm examcell for results">
+          <a
+            href="https://examcell.rguktsklm.ac.in/"
+            target="_blank"
+            aria-label="go to rgukt sklm examcell for results"
+          >
             Go to Examcell
           </a>
           Know your results Here
@@ -135,9 +139,8 @@ export default function Gcontainer(props) {
             />
           </div>
           <History history={history} />
-          <h3 className="gradetitle">GPA</h3>
+          <h3 className="gradetitle">SGPA Calculator</h3>
           <h1 id="totalgrade">{cgpa}</h1>
-          <PredictInfo />
         </div>
       </div>
     </>
