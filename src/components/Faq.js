@@ -13,7 +13,7 @@ export default function Faq() {
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
-                      </p>
+        </p>
       </div>
       <div class="faq-item">
         <div class="faq-question">Why do we use it?</div>

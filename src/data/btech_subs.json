@@ -59,7 +59,7 @@
     ],
     ["ASA", "DRCS", "EE-1", "EC", "TE-1", "ELCSL-2", "SML", "TEL"],
 
-    ["HT", "DTE", "ATD", "MMM","MMML", "HTL", "ATDL", "ELCSL-2"]
+    ["HT", "DTE", "ATD", "MMM", "MMML", "HTL", "ATDL", "ELCSL-2"]
   ],
   [
     ["CNS", "AI", "MA", "ST", "DIP/OOAD", "ELCSL-3", "MP", "CDC", "SI"],
@@ -68,7 +68,7 @@
     ["PSOC", "PDI", "E-1", "E-2", "OE-1", "OE-2", "MP-2", "SI", "CDC"],
     ["BPCADL", "DSS", "EE-2", "FE", "TE-2", "PEC-1/MOOC-1", "ELCSL-1", "EEL"],
 
-    ["OR", "FEM", "MEFA", "CAD/CAM", "PPE", "SI" , "CAMSL", "ELCSL-3"]
+    ["OR", "FEM", "MEFA", "CAD/CAM", "PPE", "SI", "CAMSL", "ELCSL-3"]
   ],
   [
     ["ML", "E-4", "OE-2", "PROJECT-1"],

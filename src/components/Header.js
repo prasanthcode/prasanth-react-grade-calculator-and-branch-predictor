@@ -21,7 +21,6 @@ export default function Header() {
     else setLight();
   };
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <div className="header">
       <h3 className="header-title">Grade Calculator</h3>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 export default function BranchPredict() {
@@ -28,7 +28,6 @@ export default function BranchPredict() {
     const { name, value } = e.target;
 
     setInputValue((prevInputs) => ({ ...prevInputs, [name]: value }));
-    // console.log(prevInputs);
   };
 
   const [loading, setLoading] = useState("Predict");
@@ -46,7 +45,6 @@ export default function BranchPredict() {
             },
           }
         );
-        // console.log(response.data);
         setPredictData({
           cse: (response.data.predictions["CS"] * 100).toFixed(0),
           ece: (response.data.predictions["EC"] * 100).toFixed(0),

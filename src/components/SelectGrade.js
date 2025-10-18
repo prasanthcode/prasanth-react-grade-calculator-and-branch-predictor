@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function SelectGrade({grade,onChange}) {
+export default function SelectGrade({ grade, onChange }) {
   return (
-   
-    <select className="branchoption grades"  onChange={onChange} value={grade} aria-label="select grade">
+    <select
+      className="branchoption grades"
+      onChange={onChange}
+      value={grade}
+      aria-label="select grade"
+    >
       <option value="">Select</option>
       <option value="10">Ex</option>
       <option value="9">A</option>

@@ -43,7 +43,7 @@ export default function Syllabus() {
         <h3>{`${buttons[selected]} Syllabus`}</h3>
 
         <iframe
-          src={`https://docs.google.com/gview?url=https://prasanth-rgukt-grade.web.app/syllabus/syllabus/${syllabus[selected]}&embedded=true`}
+          src={`https://docs.google.com/gview?url=https://prasanth-rgukt-grade.web.app/syllabus/${syllabus[selected]}&embedded=true`}
           width="100%"
           height="500px"
           title="PDF Viewer"
@@ -51,7 +51,7 @@ export default function Syllabus() {
 
         <Link
           target="_blank"
-          to={`/syllabus/syllabus/${syllabus[selected]}`}
+          to={`/syllabus/${syllabus[selected]}`}
           download="syllabus.pdf"
         >
           Download PDF
