@@ -1,8 +1,8 @@
 :root {
-  --prime-light: #ecf0f1; /* Light gray-blue for the main background */
-  --prime-dark: #dfe6e9; /* Slightly darker shade for the main background */
-  --second-light: #1F1F1F; /* Dark blue-gray for secondary elements */
-  --second-dark: #fc8f00; /* A vibrant orange for accents */
+  --prime-light: #ecf0f1;
+  --prime-dark: #dfe6e9;
+  --second-light: #1f1f1f;
+  --second-dark: #fc8f00;
 }
 * {
   padding: 0;
@@ -14,23 +14,16 @@
   --second-light: #d8d8d8;
   --second-dark: #e76e1d;
 }
-/* Header container */
 .header {
   background-color: var(--prime-dark);
-  /*; Dark background */
-
-  /* right: 0; */
-  /* width: max-content; */
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
   width: 100%;
   box-sizing: border-box;
   padding: 10px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* margin-top: 0; */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-right {
@@ -41,7 +34,6 @@
 }
 .header a {
   color: var(--second-light);
-  /* text-decoration: none; */
 }
 
 .fa-youtube {
@@ -55,7 +47,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: var(--prime-light);
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
 }
 body::-webkit-scrollbar {
   display: none;
@@ -71,16 +63,15 @@ body::-webkit-scrollbar {
 
   text-align: center;
   width: 100%;
-  /* box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2); Subtle shadow */
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  background-color: var(--prime-dark); /* Dark table background */
-  color: var(--second-light); /* Light text */
+  background-color: var(--prime-dark);
+  color: var(--second-light);
 }
 
 th {
   padding: 5px;
-  background-color: var(--prime-dark); /* Dark header background */
-  color: var(--second-light); /* Light text */
+  background-color: var(--prime-dark);
+  color: var(--second-light);
 }
 
 td {
@@ -88,7 +79,7 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: var(--prime-light); /* Darker background for even rows */
+  background-color: var(--prime-light);
 }
 
 #container {
@@ -106,7 +97,7 @@ td > select {
   width: 60%;
   padding: 5px;
   background: none;
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
 }
 
 .optandbtn {
@@ -117,7 +108,6 @@ td > select {
   width: 300px;
 }
 .calculate {
-  /* align-items: right; */
   justify-content: right;
   margin-top: 24px;
 }
@@ -128,7 +118,7 @@ td > select {
   font-weight: 700;
   border: none;
   text-decoration: none;
-  background-color: var(--second-dark); /* Lighter button background */
+  background-color: var(--second-dark);
   color: var(--prime-light);
   border-radius: 10px;
 }
@@ -138,24 +128,23 @@ td > select {
 }
 
 .branchoption {
-  /* margin: 10px; */
   height: 32px;
   width: 65px;
   padding: 3px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: var(--prime-dark); /* Darker background for branch option */
+  background-color: var(--prime-dark);
   font-weight: 700;
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
   transition: background-color 0.3s ease-in-out;
 }
 
 .branchoption:hover {
-  background-color: var(--prime-dark); /* Hover background color */
-  color: var(--second-light); /* Light text */
+  background-color: var(--prime-dark);
+  color: var(--second-light);
 }
 
 #gradecontainer {
@@ -174,22 +163,15 @@ td > select {
   margin-left: 5px;
 }
 .prediction-info {
-  /* background-color: var(--prime-dark); */
   padding: 15px;
   margin: 10px;
-  /* border-radius: 8px; */
-
-  /* box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); */
   text-align: center;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  /* border: 2px solid white; */
 }
 .prediction-info p {
   color: var(--second-light);
   margin: 10px;
 }
 .testing-label {
-  /* font-size: 14px; */
   margin-right: 8px;
   color: var(--second-dark);
 }
@@ -199,15 +181,15 @@ td > select {
   border: none;
   outline: none;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  color: var(--second-light); /* Light text */
-  background-color: var(--prime-dark); /* Dark button background */
+  color: var(--second-light);
+  background-color: var(--prime-dark);
   font-weight: 700;
   cursor: pointer;
 }
 
 #totalgrade {
   font-size: 100px;
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
   transition: 0.5s ease-in-out;
 }
 #addsem,
@@ -219,18 +201,14 @@ td > select {
   width: 30%;
   height: 20px;
   background-color: var(--prime-light);
-
-  /* margin-right: 10px; */
   font-weight: 700;
   outline: none;
-  /* border:none; */
   border: 1px solid var(--second-light);
   color: var(--second-light);
   border-radius: 5px;
   text-align: right;
   font-size: 15px;
   padding: 5px;
-  /* box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1) inset; */
 }
 .predict-input {
   display: flex;
@@ -239,7 +217,6 @@ td > select {
   margin: 10px;
 }
 .branch-wrapper {
-  /* box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px; */
   background-color: var(--prime-dark);
   border-radius: 8px;
   padding: 8px;
@@ -275,7 +252,7 @@ td > select {
   position: relative;
   cursor: pointer;
   display: block;
-  width: 40px; /* Reduce the width by 20% */
+  width: 40px;
   height: 24px;
   background: var(--second-light);
   border-radius: 50px;
@@ -285,12 +262,12 @@ td > select {
 .theme label:before {
   position: absolute;
   top: 50%;
-  left: 2px; /* Reduce the left position by 20% */
+  left: 2px;
   transform: translateY(-50%);
   content: "";
   display: block;
-  width: 20px; /* Reduce the width by 20% */
-  height: 20px; /* Reduce the height by 20% */
+  width: 20px;
+  height: 20px;
   background: var(--second-dark);
   border-radius: 50%;
   transition: left 300ms linear;
@@ -301,9 +278,8 @@ td > select {
 }
 
 .theme input:checked + label:before {
-  left: 18px; /* Reduce the left position by 20% */
+  left: 18px;
 }
-/* Footer styles */
 footer {
   background-color: var(--prime-dark);
   color: var(--second-light);
@@ -336,22 +312,20 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
-.designed-by{
+.designed-by {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.designed-by img{
+.designed-by img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-
 }
-/* Responsive styles */
 
 .semester-container {
-  width: 200px; /* Adjust the container width as needed */
-  margin: 20px auto; /* Center the container horizontally */
+  width: 200px;
+  margin: 20px auto;
   padding: 10px;
   border-radius: 5px;
   max-height: 250px;
@@ -363,19 +337,19 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid var(--second-light); /* Add a border between rows */
+  border-bottom: 1px solid var(--second-light);
 }
 
 .semester {
   font-size: 13px;
   font-weight: bold;
-  color: var(--second-light); /* Text color for semester */
+  color: var(--second-light);
 }
 
 .cgpa {
   font-size: 13px;
   font-weight: bold;
-  color: var(--second-light); /* Color for CGPA */
+  color: var(--second-light);
 }
 .sem-wrapper {
   max-height: 0;
@@ -395,17 +369,12 @@ footer {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  /* background-color: #f0f0f0; */
 }
 
-/* Styles for each year's syllabus */
 .syllabus-year {
-  /* background-color: #47596b; */
-  /* border: 1px solid var(--second-light); */
   border-radius: 5px;
   padding: 15px 8px;
   text-align: center;
-  /* box-shadow: 0 2px 5px rgba(126, 126, 126, 0.1); */
 }
 
 .syllabus-year h3 {
@@ -413,7 +382,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Styles for download links */
 .syllabus-year a {
   display: block;
   background-color: var(--second-light);
@@ -421,7 +389,6 @@ footer {
   text-decoration: none;
   padding: 3px 8px;
   border-radius: 8px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
   transition: background-color 0.3s ease;
 }
 
@@ -443,9 +410,7 @@ footer {
 .faq-container {
   width: 100%;
   margin: 0 auto;
-  /* background-color: var(--second-light); */
   border-radius: 10px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .faq-item {
@@ -480,7 +445,6 @@ footer {
 }
 
 .faq-answer.active {
-  /* background-color: var(--prime-dark); */
   border-bottom: 1px solid var(--prime-light);
 }
 
@@ -495,75 +459,62 @@ footer {
   transform: rotate(90deg);
 }
 a {
-  /* display: inline-block; */
   text-decoration: none;
   color: var(--second-dark);
 }
-.include_sgpa{
+.include_sgpa {
   font-weight: 600;
-  background-color:  var(--prime-dark);
-
-  
+  background-color: var(--prime-dark);
 }
- 
-.syllabus-btn-group{
-  /* border: 1px solid  var(--second-dark); */
+
+.syllabus-btn-group {
   color: var(--second-light);
-  border-left: 1px solid  var(--second-dark);
-  border-top: 1px solid  var(--second-dark);
-  border-bottom: 1px solid  var(--second-dark);
+  border-left: 1px solid var(--second-dark);
+  border-top: 1px solid var(--second-dark);
+  border-bottom: 1px solid var(--second-dark);
   border-right: none;
-  
-
 }
-.syllabus-btn-group:first-child{
-  border-left: 1px solid  var(--second-dark);
-  border-top: 1px solid  var(--second-dark);
-  border-bottom: 1px solid  var(--second-dark);
+.syllabus-btn-group:first-child {
+  border-left: 1px solid var(--second-dark);
+  border-top: 1px solid var(--second-dark);
+  border-bottom: 1px solid var(--second-dark);
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
-.syllabus-btn-group:last-child{
-  border-right: 1px solid  var(--second-dark);
-  border-bottom: 1px solid  var(--second-dark);
+.syllabus-btn-group:last-child {
+  border-right: 1px solid var(--second-dark);
+  border-bottom: 1px solid var(--second-dark);
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-.cgp{
+.cgp {
   font-size: 100px;
-  color: var(--second-light); /* Light text */
+  color: var(--second-light);
   transition: 0.5s ease-in-out;
   width: 100%;
   text-align: center;
-  
 }
-.sgpa_table{
+.sgpa_table {
   margin: 20px 0;
-  /* width: 80%; */
-  background-color:  var(--prime-dark);
-  
+  background-color: var(--prime-dark);
+
   text-align: center;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-collapse: collapse;
 }
 
-.sgpa_table td{
+.sgpa_table td {
   width: 30%;
   text-align: center;
   padding: 10px;
-
 }
 
-
-.sgpa_input{
+.sgpa_input {
   width: 100%;
   height: 20px;
   background-color: var(--prime-light);
-
-  /* margin-right: 10px; */
   font-weight: 700;
   outline: none;
-  /* border:none; */
   border: 1px solid var(--second-light);
   color: var(--second-light);
   border-radius: 5px;
@@ -571,29 +522,27 @@ a {
   font-size: 15px;
   padding: 5px;
 }
-.cgpa_container{
+.cgpa_container {
   width: 50%;
   margin: 0 auto;
 }
-.new{
+.new {
   position: absolute;
   font-size: 12px;
   font-weight: 600;
   left: 40px;
-  border:1px solid var(--second-dark);
+  border: 1px solid var(--second-dark);
   border-radius: 5px;
   padding: 2px 5px;
 }
 @media screen and (max-width: 768px) {
-  .cgpa_container{
-  width: 79%;
-  margin: 0 ;
-}
+  .cgpa_container {
+    width: 79%;
+    margin: 0;
+  }
   .syllabus-container {
-  
-  flex-direction: row;
-  
-}
+    flex-direction: row;
+  }
 
   .addsem-container {
     margin-top: 30px;
@@ -606,7 +555,7 @@ a {
     flex-direction: column-reverse;
     margin: 0px auto;
   }
-  #totalgrade{
+  #totalgrade {
     margin-top: 50px;
   }
   #grades_wrapper {
@@ -627,27 +576,26 @@ a {
   .optandbtn {
     width: 100%;
   }
-  /* Header container */
   .header {
-    position: fixed; /* Fix the header at the top */
-    top: 0; /* Stick it to the top of the viewport */
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    z-index: 100; /* Ensure it's above other content */
-    background-color: var(--prime-dark); /* Dark background */
-    color: var(--second-light); /* Light text */
+    z-index: 100;
+    background-color: var(--prime-dark);
+    color: var(--second-light);
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   .social-icons {
     text-align: center;
   }
-.branch-wrapper{
-  margin-bottom: 20px;
-}
+  .branch-wrapper {
+    margin-bottom: 20px;
+  }
   .branch-wrapper .social-icons a {
     display: inline-block;
     font-size: medium;
